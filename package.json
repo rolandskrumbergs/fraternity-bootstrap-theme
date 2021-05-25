@@ -1,0 +1,25 @@
+{
+  "name": "korp-latvia-bootstrap-theme",
+  "version": "1.0.0",
+  "description": "Korp Latvia Bootstrap theme",
+  "repository": "https://dev.azure.com/korplatvia/Korp!%20Latvia/_git/korp-latvia-bootstrap-theme",
+  "author": "Rolands Krumbergs",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.5.0",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.8.4",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.3.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-scss-lint": "1.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-copy": "4.0.1",
+    "gulp-clean": "0.4.0"
+  }
+}

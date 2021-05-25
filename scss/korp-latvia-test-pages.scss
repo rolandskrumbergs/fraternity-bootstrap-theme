@@ -1,0 +1,117 @@
+@import 'korp-latvia-theme-variables.scss';
+@import "bootstrap/mixins/_breakpoints";
+
+$main-section-background-url: url('/img/Jubilejas_svetki.jpg');
+$gallery-section-background-url: url('/img/100_gades_akts.jpg');
+$about-section-background-url: url('/img/main.jpg');
+$apply-section-background-url: url('/img/Karogs.jpg');
+$contact-section-background-url: url('/img/Studiju_atklasanas_svetki.jpg');
+
+$guest-events-background-url: url('/img/Dagnis_Arturs.JPG');
+
+html,
+body {
+  height: 100%;
+}
+
+@mixin main-section($background-url) {
+  background: linear-gradient($primary-overlay-color, $primary-overlay-color),
+    $background-url center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .main-content {
+    padding-top: 20rem;
+  }
+}
+
+#main-start-section {
+  @include main-section($main-section-background-url);
+}
+
+#gallery-start-section {
+  @include main-section($gallery-section-background-url);
+}
+
+#about-start-section {
+  @include main-section($about-section-background-url);
+}
+
+#apply-start-section {
+  @include main-section($apply-section-background-url);
+}
+
+#contact-start-section {
+  @include main-section($contact-section-background-url);
+}
+
+#guest-events-start-section {
+  @include main-section($guest-events-background-url);
+
+  background-position: right;
+}
+
+.header-content {
+  height: 100%;
+  width: 100%;
+}
+
+#intro {
+  img {
+    height: 250px;
+  }
+}
+
+.people-headline {
+  position: relative;
+  display: flex;
+  width: 70px;
+
+  h3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -webkit-transform: rotate(-90deg) translateX(-58px);
+    -moz-transform: rotate(-90deg) translateX(-58px);
+    -ms-transform: rotate(-90deg) translateX(-58px);
+    -o-transform: rotate(-90deg) translateX(-58px);
+    transform: rotate(-90deg) translateX(-58px);
+  }
+}
+
+.people-content {
+  width: calc(100% - 70px)
+}
+
+.people-image {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 1rem;
+  border-radius: 50px;
+}
+
+.people-title {
+  margin-bottom: 0;
+}
+
+.people-name {
+  margin-bottom: 0;
+  font-family: 'OpenSans-Bold';
+}
+
+.people-info {
+  margin-bottom: 0;
+}
+
+.contact-btn {
+  float: right;
+}
