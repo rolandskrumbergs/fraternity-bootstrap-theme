@@ -53,6 +53,10 @@ body {
   background-position: right;
 }
 
+#privacy-intro {
+  height: 145px;
+}
+
 .header-content {
   height: 100%;
   width: 100%;
@@ -114,4 +118,13 @@ body {
 
 .contact-btn {
   float: right;
+}
+
+iframe {
+  label {
+    span {
+      color: red;
+    }
+
+  }
 }

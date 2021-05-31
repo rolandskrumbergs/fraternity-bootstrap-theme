@@ -81,71 +81,173 @@
     />
 
     <!-- Custom built theme - This already includes Bootstrap 4 -->
-    <link rel="stylesheet" href="css/korp-latvia-theme.css" />
-    <link rel="stylesheet" href="css/korp-latvia-test-pages.css" />
+    <link rel="stylesheet" href="scss/korp-latvia-theme.css" />
+    <link rel="stylesheet" href="scss/korp-latvia-test-pages.css" />
   </head>
   <body>
     <!-- Nav tabs -->
     <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
       <a class="navbar-brand" href="#">
-        <div class="navbar-brand__img">
-          <img src="/img/Cirkelis_balts.png" />
-        </div>
-        <div class="navbar-brand__text">
-          <span class="navbar-brand__text--first">
-            Studentu korporācija
-          </span>
-          <span class="navbar-brand__text--second">
-            Latvia
-          </span>
-        </div>
+          <div class="navbar-brand__img">
+              <img src="img/Cirkelis_balts.png" />
+          </div>
+          <div class="navbar-brand__text">
+              <span class="navbar-brand__text--first">
+                  Studentu korporācija
+              </span>
+              <span class="navbar-brand__text--second">
+                  Latvia
+              </span>
+          </div>
       </a>
-      <button
-        class="navbar-toggler hidden-lg-up"
-        type="button"
-        data-toggle="collapse"
-        data-target="#main-nav-id"
-        aria-controls="main-nav-id"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#main-nav-id"
+          aria-controls="main-nav-id" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="main-nav-id">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Sākums</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about.html">Par mums</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="apply.html">Uzņemšana</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="galerija.html">Galerija</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Kontakti</a>
-          </li>
-        </ul>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="viesuvakari.html">Viesu vakari</a>
+              </li>
+              <li class="nav-item active ">
+                  <a class="nav-link" href="about.html">Par mums</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Kontakti</a>
+              </li>
+          </ul>
       </div>
-    </nav>
+  </nav>
 
-    <header id="about-start-section">
+    <header id="main-start-section">
       <div class="header-content text-white d-flex align-items-center">
+            <h1 class="main-headline">Spēcīgi augošs koks ar vecām un jaunām saknēm.</h1>
+          </div>
+    </header>
+
+    <section id="intro" class="container py-5">
+        <div class="row text-center">
+          <img src="/img/Vapenis_1.JPG" alt="" class="img-fluid mx-auto mb-5 central-image">
+          <h2>
+            Korporācija Latvia ir mūža brālība, kas pastāv uz taisnības un goda prāta principiem.
+          </h2>
+        </div>
+    </section>
+
+    <section id="reasons-to-aply-section" class="py-5 bg-secondary">
+      <div class="container text-center">
+      <h2 class="mb-5">Kāpēc pievienoties studentu korporācijai Latvia?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Kontakti</h4>
+          <p class="mt-4">
+            Iespēja iegūt jaunus draugus un iepazīt cilvēkus no dažādām profesionālajām jomām.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Atbalsts</h4>
+          <p class="mt-4">
+            Iespēja bez maksas dzīvot korporācijas namā. Bezmaksas pasākumi biedru kandidātiem.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Attīstība</h4>
+          <p class="mt-4">
+            Apgūsti paukošanos, etiķeti, balles dejas u.c. Piedalies izglītojošos pasākumos.
+          </p>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      <section id="goals" class="container py-5">
         <div class="container">
           <div class="row">
-            <h4 class="mx-auto">Iepazīšanās</h4>
+          <div class="col-md-12 py-4 text-center">
+            <h4>
+              Mūsu mērķi
+            </h4>
           </div>
-          <div class="row">
-            <h1 class="mx-auto">
-              Kas mēs esam
-            </h1>
+          <div class="col-md-3 text-center">
+            <img src="/icons/1_ikona.png" alt="" class="icon">
+            <p>
+              Vienot akadēmiski izglītotus latviešus dzimtenē un ārpus tās patiesā brāļu mīlestībā
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="/icons/2_ikona.png" alt="" class="icon">
+            <p>
+              Stāvēt pār latviešu tautas un Latvijas valsts brīvību un neatkarību
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="/icons/3_ikona.png" alt="" class="icon">
+            <p>
+              Ar ieročiem rokās aizstāvēt savas tautas, korporācijas un savu godu
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="/icons/4_ikona.png" alt="" class="icon">
+            <p>
+              Vairot latviešu tautas garīgos spēkus, lai vīru krietnums nestu mūsu tautai labākas dienas
+            </p>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="testemonials" class="py-5 text-center bg-secondary">
+      <h4>Ko saka mūsu biedri?</h4>
+      <div id="testemonials-carousel" class="carousel sliede mt-5" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-content">
+              <img src="/img/testemonials/Rolands.jpg" alt="Testimonial Slider" class="carousel-img">
+              <div class="carousel-content_description text-left">
+                <h5>Rolands Krumbergs</h5>
+                <h6>PROGRAMMATŪRAS IZSTRĀDĀTĀJS, KONSULTANTS</h6>
+                <blockquote>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquam impedit, animi repudiandae quibusdam, architecto porro deleniti quae doloremque quisquam odit eaque adipisci nemo alias dolorem sequi vitae voluptatum dicta?"
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+                <img src="/img/testemonials/Rolands.jpg" alt="Testimonial Slider" class="carousel-img">
+                <div class="carousel-content__description text-left">
+                    <h5>Rolands Krumbergs 2</h5>
+                    <h6>Programmatūras izstrādātājs, konsultants</h6>
+                    <blockquote>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquam
+                        impedit, animi
+                        repudiandae quibusdam, architecto porro deleniti quae doloremque quisquam odit eaque
+                        adipisci nemo alias dolorem sequi vitae voluptatum dicta?"
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-content">
+              <img src="/img/testemonials/Rolands.jpg" alt="Testimonial Slider" class="carousel-img">
+              <div class="carousel-content__description text-left">
+                  <h5>Rolands Krumbergs 3</h5>
+                  <h6>Programmatūras izstrādātājs, konsultants</h6>
+                  <blockquote>
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquam
+                      impedit, animi
+                      repudiandae quibusdam, architecto porro deleniti quae doloremque quisquam odit eaque
+                      adipisci nemo alias dolorem sequi vitae voluptatum dicta?"
+                  </blockquote>
+               </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
     <footer class="py-5 bg-dark text-white footer">
       <div class="container">
@@ -160,7 +262,7 @@
           </div>
           <div class="col-md">
             <p>Latvus &copy; 1917-2020. Visas tiesības aizsargātas.</p>
-            <p>Izstrāde: Kristīne Reinberga/Rolands Krumbergs</p>
+            <p>Mājaslapu veidoja: Kristīne Reinberga/Rolands Krumbergs</p>
           </div>
         </div>
       </div>
@@ -173,5 +275,8 @@
       src="https://kit.fontawesome.com/c308bf5ea0.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/site.js"></script>
+
   </body>
 </html>
