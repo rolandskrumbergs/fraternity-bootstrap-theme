@@ -61,7 +61,7 @@ h6 {
   padding-bottom: 0;
 }
 
-.navbar-transparent {
+.navbar-transparent, .navbar-light {
 
   @include transition(padding-top, padding-bottom, background-color);
 
@@ -132,7 +132,7 @@ h6 {
     img {
       height: 45px;
 
-      @include transition(height);
+      @include transition(height); 
 
       @include media-breakpoint-up(md) {
         height: 65px;
@@ -305,7 +305,14 @@ h6 {
   padding-bottom: 10px;
   padding-left: 40px;
 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+
   @include media-breakpoint-up(lg) {
+    position: relative;
+    top: 0;
     margin-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -376,6 +383,11 @@ h6 {
     padding-left: 2rem;
     padding-right: 2rem;
 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     button {
       display: block;
       width: 100%;
@@ -408,6 +420,7 @@ h6 {
     }
 
     @include media-breakpoint-up(lg) {
+      position: relative;
       padding-left: 43px;
       margin-top: 50px;
       width: 100%;
@@ -506,7 +519,175 @@ h6 {
 }
 
 .btn-outline-primary {
+  color: $primary;
+  border: white 1px solid;
+  border-radius: 3px;
+}
+
+.btn-outline-secondary {
   color: white;
   border: white 1px solid;
   border-radius: 3px;
+}
+
+.p-5{
+  padding-top: 3rem!important;
+}
+
+.guest-events-section-container {
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    h2 {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.guest-events-container {
+
+  @include media-breakpoint-up(lg) {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+.guest-event {
+
+  margin-bottom: 60px;
+
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
+
+  h6 {
+    margin-top: 10px;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 1rem;
+    margin-bottom: 30px;
+
+    h5,
+    h6,
+    p {
+      text-align: left;
+    }
+
+    h6 {
+      margin-top: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.guest-event__image {
+  width: 85%;
+  height: 200px;
+  object-fit: cover;
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    height: 325px;
+  }
+}
+
+.guest-event__description-container {
+  text-align: left;
+}
+
+.guest-events-signup {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.common-questions-section-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+.carousel-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%
+}
+
+.carousel-content {
+
+  padding-left: 0;
+  padding-right: 0;
+
+  h5,
+  h6,
+  blockquote {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 1rem;
+
+    h5,
+    h6,
+    blockquote {
+      text-align: left;
+    }
+  }
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
 }
