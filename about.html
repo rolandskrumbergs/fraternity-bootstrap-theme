@@ -84,7 +84,22 @@
     <link rel="stylesheet" href="scss/korp-latvia-theme.css" />
     <link rel="stylesheet" href="scss/korp-latvia-test-pages.css" />
   </head>
+
   <body>
+
+    <!-- Privacy policy popup -->
+    <div class="alert text-center privacyalert" role="alert">
+      <h5>Turpinot lietot šo lapu, tu piekrīti sīkdatņu izmantošanas noteikumiem 
+        <div class=privacypolicy-link a href="privacypolicy.html">
+          <a href="privacypolicy.html"> Sīkdatņu izmantošanas noteikumi ></a>
+        </div>
+      </h5> 
+
+      <button type="button" class="btn btn-primary btn-sm acceptprivacy">
+        Piekrītu
+      </button>
+    </div>
+
     <!-- Nav tabs -->
     <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
       <a class="navbar-brand" href="#">
@@ -271,6 +286,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/privacypolicy.js"></script>
     <script
       src="https://kit.fontawesome.com/c308bf5ea0.js"
       crossorigin="anonymous"

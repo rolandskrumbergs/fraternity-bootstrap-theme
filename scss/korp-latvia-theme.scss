@@ -691,3 +691,48 @@ h6 {
     padding-right: 350px;
   }
 }
+
+.privacy-list {
+  padding-bottom: 25px;
+}
+
+.privacyalert{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #ecf0f1;
+  background: black; 
+
+  a {
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+.privacyalert.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+.privacyalert .acceptprivacy {
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+.a privacypolicy-link{
+  color: white;
+}

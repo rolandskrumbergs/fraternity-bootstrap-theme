@@ -81,25 +81,27 @@
     />
 
     <!-- Custom built theme - This already includes Bootstrap 4 -->
-    <link rel="stylesheet" href="css/korp-latvia-theme.css" />
-    <link rel="stylesheet" href="css/korp-latvia-test-pages.css" />
+    <link rel="stylesheet" href="scss/korp-latvia-theme.css" />
+    <link rel="stylesheet" href="scss/korp-latvia-test-pages.css" />
   </head>
+
   <body>
+
     <!-- Nav tabs -->
     <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
-      <a class="navbar-brand" href="#">
-        <div class="navbar-brand__img">
-          <img src="img/Cirkelis_balts.png" />
-        </div>
-        <div class="navbar-brand__text">
-          <span class="navbar-brand__text--first">
-            Studentu korporācija
-          </span>
-          <span class="navbar-brand__text--second">
-            Latvia
-          </span>
-        </div>
-      </a>
+        <a class="navbar-brand" href="#">
+            <div class="navbar-brand__img">
+                <img src="img/Cirkelis_balts.png" />
+            </div>
+            <div class="navbar-brand__text">
+                <span class="navbar-brand__text--first">
+                    Studentu korporācija
+                </span>
+                <span class="navbar-brand__text--second">
+                    Latvia
+                </span>
+            </div>
+        </a>
       <button
         class="navbar-toggler hidden-lg-up"
         type="button"
@@ -299,10 +301,24 @@
       </div>
     </footer>
 
+        <!-- Privacy policy popup -->
+        <div class="alert text-center privacyalert" role="alert">
+          <h5>Turpinot lietot šo lapu, tu piekrīti sīkdatņu izmantošanas noteikumiem 
+              <div class=privacypolicy-link>
+                  <a href="privacypolicy.html"> Sīkdatņu izmantošanas noteikumi ></a>
+              </div>
+          </h5> 
+  
+          <button type="button" class="btn btn-primary btn-sm acceptprivacy">
+              Piekrītu
+          </button>
+      </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/site.js"></script>
+    <script src="privacypolicy.js"></script>
     <script
       src="https://kit.fontawesome.com/c308bf5ea0.js"
       crossorigin="anonymous"
